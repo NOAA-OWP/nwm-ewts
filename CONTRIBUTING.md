@@ -1,32 +1,32 @@
-# Guidance on how to contribute
+# Contributing to EWTS
 
-> All contributions to this project will be released to the public domain.
-> By submitting a pull request or filing a bug, issue, or
-> feature request, you are agreeing to comply with this waiver of copyright interest.
-> Details can be found in our [TERMS](TERMS.md) and [LICENSE](LICENSE).
+Thank you for contributing to EWTS.
 
+## Development Setup
 
-There are two primary ways to help:
- - Using the issue tracker, and
- - Changing the code-base.
+1.  Clone repository
+2.  Create virtual environment for Python
+3.  Install Python runtime in editable mode: pip install -e
+    runtime/python/ewts
 
+## Build & Test
 
-## Using the issue tracker
+cmake -B build -S runtime -DCMAKE_BUILD_TYPE=Release cmake --build build
+-j
 
-Use the issue tracker to suggest feature requests, report bugs, and ask questions.
-This is also a great way to connect with the developers of the project as well
-as others who are interested in this solution.
+Run Python tests (if applicable):
 
-Use the issue tracker to find ways to contribute. Find a bug or a feature, mention in
-the issue that you will take on that effort, then follow the _Changing the code-base_
-guidance below.
+pytest -q
 
+## Coding Standards
 
-## Changing the code-base
+-   Maintain cross-language API consistency
+-   Preserve thread safety in C and C++ runtimes
+-   Ensure Fortran remains free-form compatible
+-   Follow semantic versioning for releases
 
-Generally speaking, you should fork this repository, make changes in your
-own fork, and then submit a pull request. All new code should have associated
-unit tests that validate implemented features and the presence or lack of defects.
-Additionally, the code should follow any stylistic and architectural guidelines
-prescribed by the project. In the absence of such guidelines, mimic the styles
-and patterns in the existing code-base.
+## Pull Requests
+
+-   Provide clear description
+-   Reference related issues
+-   Ensure builds pass with EWTS_WITH_NGEN=ON and OFF

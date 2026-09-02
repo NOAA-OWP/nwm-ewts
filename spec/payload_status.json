@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "generated_utc": "2026-06-26T00:00:00Z",
+  "statuses": {
+    "NULL": "NULL",
+    "INITTING": "INITIALIZING",
+    "INITTED": "INITIALIZED",
+    "STARTING": "STARTING",
+    "INPROG": "IN_PROGRESS",
+    "COMPLETE": "COMPLETE",
+    "ERROR": "ERROR"
+  }
+}

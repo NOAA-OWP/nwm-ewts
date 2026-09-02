@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "levels": {
+    "NOTSET": 0,
+    "DEBUG": 10,
+    "PERFORM": 15,
+    "INFO": 20,
+    "WARNING": 30,
+    "SEVERE": 40,
+    "FATAL": 50,
+    "STATUS ": 60
+  },
+  "canonical_names": {
+    "0": "NOTSET",
+    "10": "DEBUG",
+    "15": "PERFORM",
+    "20": "INFO",
+    "30": "WARNING",
+    "40": "SEVERE",
+    "50": "FATAL",
+    "60": "STATUS"
+  }
+}

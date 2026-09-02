@@ -1,0 +1,102 @@
+version: 1
+modules:
+  - key: ngen
+    ewts_id: NGEN
+    language: cpp
+    description: "ngen framework"
+  - key: cfe-s
+    ewts_id: CFE
+    language: c
+    description: "Conceptual Functional Equivalent to the National Water Model (Schaake)"
+  - key: cfe-x
+    ewts_id: CFE
+    language: c
+    description: "Conceptual Functional Equivalent to the National Water Model (Xianjiang)"
+  - key: cfe
+    ewts_id: CFE
+    language: c
+    description: "Conceptual Functional Equivalent to the National Water Model (Generic for logging)"
+  - key: forcing
+    ewts_id: FORCING
+    language: python
+    description: "Forcing Engine"
+  - key: lasam
+    ewts_id: LASAM
+    language: cpp
+    description: "Lumped Arid/Semi-arid Model"
+  - key: lstm
+    ewts_id: LSTM
+    language: python
+    description: "Long Short-Term Memory Networks Model"
+  - key: noah-owp-modular
+    ewts_id: NOAHOWP
+    language: fortran
+    description: "Noah OWP Land Surface Model"
+  - key: pet
+    ewts_id: PET
+    language: c
+    description: "Potential Evapotranspiration Model"
+  - key: sac-sma
+    ewts_id: SACSMA
+    language: fortran
+    description: "Sacramento Soil Moisture Accounting Model"
+  - key: sft
+    ewts_id: SFT
+    language: cpp
+    description: "Soil Freeze-thaw Model"
+  - key: smp
+    ewts_id: SMP
+    language: cpp
+    description: "Soil Moisture Profiles Model"
+  - key: snow-17
+    ewts_id: SNOW17
+    language: fortran
+    description: "Snow Cccumulation and Melt Model"
+  - key: topmodel
+    ewts_id: TOPMODEL
+    language: c
+    description: "Physically Based, Distributed Watershed Model"
+  - key: topoflow-glacier
+    ewts_id: TFGLACR
+    language: python
+    description: "Glacier Model from the TopoFlow Model"
+  - key: t-route
+    ewts_id: TROUTE
+    language: python
+    description: "T-Route routing"
+  - key: ueb
+    ewts_id: UEB_BMI
+    language: cpp
+    description: "Utah Energy Balance Model"
+  - key: schism
+    ewts_id: SCHISM
+    language: fortran
+    description: "Semi-implicit Cross-scale Hydroscience Integrated System Model (SCHISM)"
+  - key: sfincs
+    ewts_id: SFINCS
+    language: fortran
+    description: "Super-fast modelling of dynamic compound flooding in Coastal Systems"
+  - key: msw-mgr
+    ewts_id: MSWMGR
+    language: python
+    description: "Model Setup Workflow Component"
+  - key: cal-mgr
+    ewts_id: CALMGR
+    language: python
+    description: "Calibration Manager Component"
+  - key: eval-mgr
+    ewts_id: EVALMGR
+    language: python
+    description: "Evaluation Manager Component"
+  - key: fcst-mgr
+    ewts_id: FCSTMGR
+    language: python
+    description: "Forecast Manager Component"
+  - key: rte
+    ewts_id: RTE
+    language: python
+    description: "Runtime Environment Component"
+  - key: assim-engine
+    ewts_id: ASSIM
+    language: python
+    description: "Assimilation Engine Component"

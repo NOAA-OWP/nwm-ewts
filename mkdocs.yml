@@ -1,0 +1,79 @@
+site_name: EWTS Documentation
+site_description: Error and Warning Trapping System professional software manual
+site_author: NGWPC
+repo_name: nwm-ewts
+repo_url: https://github.com/NGWPC/nwm-ewts
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - c
+    - cpp
+    - fortran
+    - python
+    - yaml
+    - json
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/javascripts/mermaid-init.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Concepts: concepts.md
+  - Design Improvements: design-improvements.md
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - Installation and Build: getting-started/installation.md
+      - Configuration: getting-started/configuration.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Message Flow: architecture/message-flow.md
+      - Payload Logging: architecture/status-payloads.md
+      - Module Identity and Log Splitting: architecture/module-identity.md
+  - Runtime Guides:
+      - Python Runtime: runtimes/python.md
+      - C Runtime: runtimes/c.md
+      - C++ Runtime: runtimes/cpp.md
+      - Fortran Runtime: runtimes/fortran.md
+  - Integrations:
+      - ngen: integrations/ngen.md
+      - RTE: integrations/rte.md
+  - Tools:
+      - Generating Language Constants: tools/generate-language-constants.md
+  - Operations:
+      - Docker and Container Builds: operations/docker.md
+      - Validation Checklist: operations/validation.md
+      - Troubleshooting: operations/troubleshooting.md
+  - Developer Guide:
+      - Contributing: developer-guide/contributing.md
+      - Testing: developer-guide/testing.md
+  - Reference:
+      - API Reference: reference/api.md
+      - Configuration Reference: reference/configuration.md
+  - Appendices:
+      - Glossary: appendices/glossary.md
+      - Version 2.1.0 Release Notes: appendices/release-notes-v2.1.0.md

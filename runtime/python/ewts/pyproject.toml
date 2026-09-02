@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools==81.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ewts"
+dynamic = ["version"]
+description = "NWM EWTS runtime (Error and Warning Trapping System)"
+requires-python = ">=3.9"
+authors = [{ name = "Carolyn Maynard" }]
+keywords = ["logging", "ewts", "nwm", "ngen"]
+
+# If you truly have no external deps, you can omit this entirely.
+dependencies = []
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "ewts._version.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

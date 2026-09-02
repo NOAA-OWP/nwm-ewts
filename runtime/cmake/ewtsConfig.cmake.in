@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+set(ewts_VERSION "@CMAKE_PROJECT_VERSION@")
+set(EWTS_NGWPC_VERSION "@EWTS_NGWPC_VERSION@")
+
+# Expose installed Fortran config directory
+set(EWTS_FORTRAN_CONFIG_DIR "@EWTS_FORTRAN_CONFIG_DIR@")
+
+include("${CMAKE_CURRENT_LIST_DIR}/ewtsTargets.cmake")
+
